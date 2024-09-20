@@ -123,7 +123,7 @@ class ApiVK:
                         f'{el['likes']['count']}_{el['date']}': [size_info['url'], size_info['type']]
                     })
 
-        data_for_json = [] # Пишем требуемую структуру данных в json, для этого формируем список, который содержит такую
+        data_for_json = [] # Пишем требуемую структуру данных в json, для этого формируем список, который содержит необходимую
         # структуру
         for photo in tqdm(photos_list):
            for photo_name, photo_data in tqdm(photo.items()):
@@ -142,7 +142,7 @@ class ApiYandex:
     Класс для работы с API Яндекс.Диска.
 
     Атрибуты:
-    request_url: str - Базовый URL для работы с API Яндекс.Диска.
+    request_url: str - Базовый URL для работы с API ЯндексДиска.
     token: str - OAuth-токен для доступа к Яндекс.Диску.
     """
     request_url = 'https://cloud-api.yandex.net/v1/disk/resources'
