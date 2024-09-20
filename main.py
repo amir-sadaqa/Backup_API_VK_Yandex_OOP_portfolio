@@ -5,7 +5,7 @@ if __name__ == '__main__':
     url_creator = UrlForTokenCreator()
     print(url_creator.create_url())
 
-    # Получение фотографий с профиля ВКонтакте и загрузка на Яндекс.Диск
+    # Получение фотографий с профиля ВКонтакте и загрузка на ЯндексДиск
     vk_obj = ApiVK()
     yandex_obj = ApiYandex()
     yandex_obj.upload_to_disk(vk_obj)
